@@ -1,0 +1,122 @@
+<xmodel version="2">
+ <name>SIRC Models</name>
+ <version>Version 1.0, 10/12/2018</version>
+ <description>Author: Sander van der Hoog</description>
+ <models/>
+ <environment>
+  <constants>
+   <variable>
+    <type>int</type>
+    <name>rnd_seed</name>
+    <description>GSL Random Number Generator Seed, compatible with xparser-gsl.</description>
+   </variable>
+   <variable>
+    <type>double</type>
+    <name>GSL_RNG_SEED</name>
+    <description>GSL Random Number Generator Seed, compatible with xparser 0.17.1.</description>
+   </variable>
+   <variable>
+    <type>int</type>
+    <name>visual_log</name>
+    <description>Switch for visual log</description>
+   </variable>
+   <variable>
+     <type>int</type>
+     <name>print_info</name>
+     <description>0 or 1, A flag for printing info</description>
+   </variable>   
+   <variable>
+     <type>double</type>
+     <name>const_multiplier</name>
+     <description>Constant multiplier for transition probabiliy matrix.</description>
+   </variable>
+   <variable>
+     <type>double</type>
+     <name>p_si</name>
+     <description>Propensity to transit from Susceptible to Infected.</description>
+   </variable>
+   <variable>
+     <type>double</type>
+     <name>p_ir</name>
+     <description>Propensity to transit from Infected to Recovered.</description>
+   </variable>
+   <variable>
+     <type>double</type>
+     <name>p_rc</name>
+     <description>Propensity to transit from Recovered to Cured (no longer Susceptible).</description>
+   </variable>
+   <variable>
+     <type>double</type>
+     <name>p_rs</name>
+     <description>Propensity to transit from Recovered to Susceptible.</description>
+   </variable>
+  </constants>
+  <functionFiles>
+   <file>my_library_functions.c</file>
+   <file>Human/Human_functions.c</file>
+  </functionFiles>
+  <timeUnits/>
+  <dataTypes/>
+ </environment>
+ <agents>
+  <xagent>
+   <name>Human</name>
+   <description></description>
+   <memory>
+    <variable>
+     <type>int</type>
+     <name>id</name>
+     <description>Agent ID.</description>
+    </variable>
+    <variable>
+     <type>int</type>
+     <name>status</name>
+     <description>Status: 0: Susceptible 1: Infected 2: Recovered 3: Cured.</description>
+    </variable>
+   </memory>
+   <functions>
+   	<function>
+   		<name>Human_send_info</name>         
+     	<description></description>
+        <currentState>human_start</currentState>
+   		<nextState>00</nextState>
+   		<outputs>
+   			<output>
+   				<messageName>status_info</messageName>
+   			</output>
+   		</outputs>
+   	</function>
+   	<function>
+   		<name>Human_read_info</name>         
+     	<description></description>
+        <currentState>00</currentState>
+   		<nextState>human_end</nextState>
+   		<inputs>
+   			<input>
+   				<messageName>status_info</messageName>
+   			</input>
+   		</inputs>
+   	</function>
+   </functions>
+  </xagent>
+ </agents>
+
+ <messages>
+  <message>
+   <name>status_info</name>
+   <description>Message with status information.</description>
+   <variables>
+    <variable>
+     <type>int</type>
+     <name>id</name>
+     <description>Sending agent ID.</description>
+    </variable>
+    <variable>
+     <type>int</type>
+     <name>status</name>
+     <description>Current status.</description>
+    </variable>
+   </variables>
+  </message>
+ </messages>
+</xmodel>

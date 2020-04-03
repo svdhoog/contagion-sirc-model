@@ -1,0 +1,375 @@
+<xmodel version="2">
+ <name>SIRC Models</name>
+ <version>Version 1.0, 10/12/2018</version>
+ <description>Author: Sander van der Hoog</description>
+ <models/>
+ <environment>
+  <constants>
+   <variable>
+    <type>int</type>
+    <name>rnd_seed</name>
+    <description>GSL Random Number Generator Seed, compatible with xparser-gsl.</description>
+   </variable>
+   <variable>
+    <type>double</type>
+    <name>GSL_RNG_SEED</name>
+    <description>GSL Random Number Generator Seed, compatible with xparser 0.17.1.</description>
+   </variable>
+   <variable>
+    <type>int</type>
+    <name>visual_log</name>
+    <description>Switch for visual log</description>
+   </variable>
+   <variable>
+     <type>int</type>
+     <name>print_status_info</name>
+     <description>0 or 1, A flag for printing status info</description>
+   </variable>   
+   <variable>
+     <type>int</type>
+     <name>print_status_info_eurostat</name>
+     <description>0 or 1, A flag for printing status info of eurostat.</description>
+   </variable>   
+   <variable>
+     <type>int</type>
+     <name>print_transition_info</name>
+     <description>0 or 1, A flag for printing transition info</description>
+   </variable>   
+   <variable>
+     <type>int</type>
+     <name>const_interactive</name>
+     <description>0 or 1, A flag for interactive mode</description>
+   </variable>   
+   <variable>
+     <type>double</type>
+     <name>const_multiplier</name>
+     <description>Constant multiplier for transition probability matrix.</description>
+   </variable>
+   <variable>
+     <type>double</type>
+     <name>radius</name>
+     <description>Interaction radius.</description>
+    </variable>
+  </constants>
+  <functionFiles>
+   <file>my_library_functions.c</file>
+   <file>Human/Human_functions.c</file>
+   <file>Human/Human_aux_functions.c</file>
+   <file>Eurostat/Eurostat_functions.c</file>
+   <file>Eurostat/Eurostat_aux_functions.c</file>
+  </functionFiles>
+  <timeUnits/>
+  <dataTypes>
+   <dataType>
+    <name>position_adt</name>
+    <description></description>
+    <variables>
+    <variable>
+     <type>double</type>
+     <name>x</name>
+     <description></description>
+    </variable>
+    <variable>
+     <type>double</type>
+     <name>y</name>
+     <description></description>
+    </variable>
+   </variables>
+   </dataType>
+  </dataTypes>
+ </environment>
+ <agents>
+  <xagent>
+   <name>Human</name>
+   <description></description>
+   <memory>
+    <variable>
+     <type>int</type>
+     <name>id</name>
+     <description>Agent ID.</description>
+    </variable>
+   <variable>
+     <type>int</type>
+     <name>interactive</name>
+     <description>0 or 1, Copy of constant const_interactive for interactive mode</description>
+   </variable>   
+   <variable>
+     <type>double</type>
+     <name>p_si</name>
+     <description>Propensity to transit from Susceptible to Infected.</description>
+   </variable>
+   <variable>
+     <type>double</type>
+     <name>p_ir</name>
+     <description>Propensity to transit from Infected to Recovered.</description>
+   </variable>
+   <variable>
+     <type>double</type>
+     <name>p_rc</name>
+     <description>Propensity to transit from Recovered to Cured (no longer Susceptible).</description>
+   </variable>
+   <variable>
+     <type>double</type>
+     <name>p_rs</name>
+     <description>Propensity to transit from Recovered to Susceptible.</description>
+   </variable>
+    <variable>
+     <type>int</type>
+     <name>status</name>
+     <description>Status: 0: Susceptible 1: Infected 2: Recovered 3: Cured.</description>
+    </variable>
+    <variable>
+     <type>int</type>
+     <name>count_sum</name>
+     <description>Sum of neighbours.</description>
+    </variable>
+    <variable>
+     <type>int_array</type>
+     <name>count</name>
+     <description>Count no. of neighbours with each status.</description>
+    </variable>
+    <variable>
+     <type>int_array</type>
+     <name>neighbourhood</name>
+     <description>IDs of neighbouring agents.</description>
+    </variable>
+    <variable>
+     <type>position_adt</type>
+     <name>position</name>
+     <description>(x,y) position.</description>
+    </variable>    
+    <variable>
+     <type>double</type>
+     <name>xpos</name>
+     <description></description>
+    </variable>
+    <variable>
+     <type>double</type>
+     <name>ypos</name>
+     <description></description>
+    </variable>
+   </memory>
+   <functions>
+
+    <function>
+      <name>Human_init</name>         
+      <description></description>
+        <currentState>human_start</currentState>
+      <nextState>00</nextState>
+      <inputs/>
+      <outputs/>
+    </function>
+   	<function>
+   		<name>Human_send_info</name>         
+     	<description></description>
+        <currentState>00</currentState>
+   		<nextState>01</nextState>
+      <inputs/>
+   		<outputs>
+   			<output>
+   				<messageName>local_status_info</messageName>
+   			</output>
+        <output>
+          <messageName>position_status_info</messageName>
+        </output>
+   		</outputs>
+   	</function>
+   	<function>
+   		<name>Human_read_info</name>         
+     	<description></description>
+        <currentState>01</currentState>
+   		<nextState>02</nextState>
+   		<inputs>
+   			<input>
+   				<messageName>local_status_info</messageName>
+          <filter>
+            <lhs>
+              <lhs>
+                <value>m.to_id</value>
+              </lhs>
+              <op>EQ</op>
+              <rhs>
+                <value>a.id</value>
+              </rhs>
+            </lhs>
+            <op>OR</op>
+            <rhs>
+              <lhs>
+                <value>m.to_id</value>
+              </lhs>
+              <op>EQ</op>
+              <rhs>
+                <value>0</value>
+              </rhs>
+            </rhs>
+          </filter>
+   			</input>
+        <input>
+          <messageName>position_status_info</messageName>
+        </input>
+   		</inputs>
+      <outputs/>
+   	</function>
+    <function>
+      <name>Human_state_transition_noninteractive</name>         
+      <description></description>
+      <currentState>02</currentState>
+      <nextState>human_end</nextState>
+      <condition>
+            <lhs>
+              <value>a.interactive</value>
+            </lhs>
+            <op>EQ</op>
+            <rhs>
+              <value>0</value>
+            </rhs>
+      </condition>
+      <inputs/>
+      <outputs/>
+    </function>
+    <function>
+      <name>Human_state_transition_interactive</name>         
+      <description></description>
+      <currentState>02</currentState>
+      <nextState>human_end</nextState>
+      <condition>
+            <lhs>
+              <value>a.interactive</value>
+            </lhs>
+            <op>EQ</op>
+            <rhs>
+              <value>1</value>
+            </rhs>
+      </condition>
+      <inputs/>
+      <outputs/>
+    </function>
+   </functions>
+  </xagent>
+
+  <xagent>
+   <name>Eurostat</name>
+   <description></description>
+   <memory>
+    <variable>
+     <type>int</type>
+     <name>id</name>
+     <description>Agent ID.</description>
+    </variable>
+    <variable>
+     <type>int</type>
+     <name>count_sum</name>
+     <description>Sum of agents.</description>
+    </variable>
+    <variable>
+     <type>int_array</type>
+     <name>count</name>
+     <description>Count no. of human agents with each status.</description>
+    </variable>
+    <variable>
+     <type>int</type>
+     <name>count_status_0</name>
+     <description>Count no. of human agents with status 0.</description>
+    </variable>
+    <variable>
+     <type>int</type>
+     <name>count_status_1</name>
+     <description>Count no. of human agents with status 1.</description>
+    </variable>
+    <variable>
+     <type>int</type>
+     <name>count_status_2</name>
+     <description>Count no. of human agents with status 2.</description>
+    </variable>
+    <variable>
+     <type>int</type>
+     <name>count_status_3</name>
+     <description>Count no. of human agents with status 3.</description>
+    </variable>
+    <variable>
+     <type>double</type>
+     <name>freq_status_0</name>
+     <description>Frequency of human agents with status 0.</description>
+    </variable>
+    <variable>
+     <type>double</type>
+     <name>freq_status_1</name>
+     <description>Frequency of human agents with status 1.</description>
+    </variable>
+    <variable>
+     <type>double</type>
+     <name>freq_status_2</name>
+     <description>Frequency of human agents with status 2.</description>
+    </variable>
+    <variable>
+     <type>double</type>
+     <name>freq_status_3</name>
+     <description>Frequency of human agents with status 3.</description>
+    </variable>
+   </memory>
+
+   <functions>
+    <function>
+      <name>Eurostat_read_info</name>         
+      <description></description>
+      <currentState>Eurostat_start</currentState>
+      <nextState>Eurostat_end</nextState>
+      <inputs>
+        <input>
+          <messageName>local_status_info</messageName>
+        </input>
+        <input>
+          <messageName>position_status_info</messageName>
+        </input>
+      </inputs>
+      <outputs/>
+    </function>
+   </functions>
+  </xagent>
+ </agents>
+
+ <messages>
+  <message>
+   <name>local_status_info</name>
+   <description>Message with status information of agent from_id, send to agent with to_id.</description>
+   <variables>
+    <variable>
+     <type>int</type>
+     <name>from_id</name>
+     <description>Sending agent ID.</description>
+    </variable>
+    <variable>
+     <type>int</type>
+     <name>to_id</name>
+     <description>Receiver agent ID.</description>
+    </variable>
+    <variable>
+     <type>int</type>
+     <name>status</name>
+     <description>Current status of agent with ID=from_id.</description>
+    </variable>
+   </variables>
+  </message>
+  <message>
+   <name>position_status_info</name>
+   <description>Message with position and status information of agent.</description>
+   <variables>
+    <variable>
+     <type>int</type>
+     <name>from_id</name>
+     <description>Sending agent ID.</description>
+    </variable>
+    <variable>
+     <type>position_adt</type>
+     <name>position</name>
+     <description>position.</description>
+    </variable>
+    <variable>
+     <type>int</type>
+     <name>status</name>
+     <description>Current status of agent with ID=from_id.</description>
+    </variable>
+   </variables>
+  </message>
+ </messages>
+</xmodel>

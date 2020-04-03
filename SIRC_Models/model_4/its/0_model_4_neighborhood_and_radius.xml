@@ -1,0 +1,1628 @@
+<states>
+<itno>0</itno>
+<environment>
+<rnd_seed>0</rnd_seed>
+<gsl_rng_seed>0.0</gsl_rng_seed>
+<visual_log>0</visual_log>
+<print_status_info>0</print_status_info>
+<print_status_info_eurostat>0</print_status_info_eurostat>
+<print_transition_info>0</print_transition_info>
+<const_interactive>1</const_interactive>
+<const_multiplier>0.8</const_multiplier>
+<radius>10.0</radius>
+</environment>
+<xagent>
+<name>Eurostat</name>
+  <id>1</id>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <count_status_0>0</count_status_0>
+  <count_status_1>0</count_status_1>
+  <count_status_2>0</count_status_2>
+  <count_status_3>0</count_status_3>
+  <freq_status_0>0.0</freq_status_0>
+  <freq_status_1>0.0</freq_status_1>
+  <freq_status_2>0.0</freq_status_2>
+  <freq_status_3>0.0</freq_status_3>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>2</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{21,60,101,30,63,91,39,22}</neighbourhood>
+  <position>{57.6822077059,80.649219627}</position>
+  <xpos>57.6822077059</xpos>
+  <ypos>80.649219627</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>3</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{80,35,62,5,62,66,72,27}</neighbourhood>
+  <position>{81.4672824098,55.0325737835}</position>
+  <xpos>81.4672824098</xpos>
+  <ypos>55.0325737835</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>4</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{42,88,42,30,45,55,74,80}</neighbourhood>
+  <position>{47.3854239303,3.5316296152}</position>
+  <xpos>47.3854239303</xpos>
+  <ypos>3.5316296152</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>5</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{37,23,49,86,33,23,85,94}</neighbourhood>
+  <position>{75.5239593392,25.8997149893}</position>
+  <xpos>75.5239593392</xpos>
+  <ypos>25.8997149893</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>6</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{101,82,90,50,21,11,12,23}</neighbourhood>
+  <position>{36.1284216684,14.8978914053}</position>
+  <xpos>36.1284216684</xpos>
+  <ypos>14.8978914053</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>7</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{82,89,100,101,39,21,54,38}</neighbourhood>
+  <position>{91.5516784605,35.3255771714}</position>
+  <xpos>91.5516784605</xpos>
+  <ypos>35.3255771714</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>8</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{40,89,55,90,21,80,77,23}</neighbourhood>
+  <position>{72.0555857307,63.9075472929}</position>
+  <xpos>72.0555857307</xpos>
+  <ypos>63.9075472929</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>9</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{40,36,76,10,77,42,23,15}</neighbourhood>
+  <position>{88.1720337785,42.4568867325}</position>
+  <xpos>88.1720337785</xpos>
+  <ypos>42.4568867325</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>10</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{97,91,44,25,97,80,95,73}</neighbourhood>
+  <position>{53.6526062561,58.5198518452}</position>
+  <xpos>53.6526062561</xpos>
+  <ypos>58.5198518452</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>11</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{58,82,43,87,17,44,60,63}</neighbourhood>
+  <position>{5.21955190842,30.078991917}</position>
+  <xpos>5.21955190842</xpos>
+  <ypos>30.078991917</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>12</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{37,38,37,80,9,12,43,20}</neighbourhood>
+  <position>{15.9228590825,88.3595158895}</position>
+  <xpos>15.9228590825</xpos>
+  <ypos>88.3595158895</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>13</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{23,64,15,8,91,45,12,64}</neighbourhood>
+  <position>{50.1976648691,86.6215029641}</position>
+  <xpos>50.1976648691</xpos>
+  <ypos>86.6215029641</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>14</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{89,66,44,49,97,3,67,34}</neighbourhood>
+  <position>{50.5339790686,63.9085693509}</position>
+  <xpos>50.5339790686</xpos>
+  <ypos>63.9085693509</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>15</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{21,60,25,96,91,64,90,18}</neighbourhood>
+  <position>{95.9805084558,70.1748751652}</position>
+  <xpos>95.9805084558</xpos>
+  <ypos>70.1748751652</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>16</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{22,59,89,52,78,91,10,50}</neighbourhood>
+  <position>{93.8595675536,69.2983920074}</position>
+  <xpos>93.8595675536</xpos>
+  <ypos>69.2983920074</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>17</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{53,96,92,71,54,63,16,97}</neighbourhood>
+  <position>{22.5464889494,81.2039099687}</position>
+  <xpos>22.5464889494</xpos>
+  <ypos>81.2039099687</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>18</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{25,58,26,83,47,37,70,56}</neighbourhood>
+  <position>{13.7154094277,97.2538433659}</position>
+  <xpos>13.7154094277</xpos>
+  <ypos>97.2538433659</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>19</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{20,29,40,56,84,68,11,85}</neighbourhood>
+  <position>{83.536588937,97.821120929}</position>
+  <xpos>83.536588937</xpos>
+  <ypos>97.821120929</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>20</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{51,90,89,92,60,96,71,6}</neighbourhood>
+  <position>{69.0994706197,73.7120063688}</position>
+  <xpos>69.0994706197</xpos>
+  <ypos>73.7120063688</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>21</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{79,43,90,48,32,37,50,26}</neighbourhood>
+  <position>{97.8511038496,13.617815561}</position>
+  <xpos>97.8511038496</xpos>
+  <ypos>13.617815561</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>22</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{78,61,57,48,81,21,19,5}</neighbourhood>
+  <position>{53.8751067704,50.09785179}</position>
+  <xpos>53.8751067704</xpos>
+  <ypos>50.09785179</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>23</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{15,10,77,15,61,67,35,86}</neighbourhood>
+  <position>{51.2540938834,12.8694925813}</position>
+  <xpos>51.2540938834</xpos>
+  <ypos>12.8694925813</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>24</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{20,55,87,14,16,5,39,101}</neighbourhood>
+  <position>{14.2798416935,46.0847790106}</position>
+  <xpos>14.2798416935</xpos>
+  <ypos>46.0847790106</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>25</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{74,6,6,16,33,45,77,31}</neighbourhood>
+  <position>{83.3727091186,62.1674419251}</position>
+  <xpos>83.3727091186</xpos>
+  <ypos>62.1674419251</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>26</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{33,89,17,56,76,69,36,2}</neighbourhood>
+  <position>{15.6312111342,63.0179199797}</position>
+  <xpos>15.6312111342</xpos>
+  <ypos>63.0179199797</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>27</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{73,11,16,5,23,28,75,15}</neighbourhood>
+  <position>{58.3541844138,40.3464573801}</position>
+  <xpos>58.3541844138</xpos>
+  <ypos>40.3464573801</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>28</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{43,12,40,81,2,81,95,35}</neighbourhood>
+  <position>{45.5157344652,52.4703414873}</position>
+  <xpos>45.5157344652</xpos>
+  <ypos>52.4703414873</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>29</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{37,7,60,76,25,66,54,31}</neighbourhood>
+  <position>{43.0057257419,83.249181629}</position>
+  <xpos>43.0057257419</xpos>
+  <ypos>83.249181629</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>30</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{38,2,15,47,51,39,86,38}</neighbourhood>
+  <position>{25.0826779946,15.3382626372}</position>
+  <xpos>25.0826779946</xpos>
+  <ypos>15.3382626372</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>31</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{34,70,42,39,95,95,12,49}</neighbourhood>
+  <position>{88.6178789331,85.349455911}</position>
+  <xpos>88.6178789331</xpos>
+  <ypos>85.349455911</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>32</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{61,8,48,79,48,66,23,95}</neighbourhood>
+  <position>{75.6348220989,6.27342719969}</position>
+  <xpos>75.6348220989</xpos>
+  <ypos>6.27342719969</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>33</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{74,83,7,62,91,37,60,83}</neighbourhood>
+  <position>{42.4160787268,88.4418750279}</position>
+  <xpos>42.4160787268</xpos>
+  <ypos>88.4418750279</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>34</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{80,70,75,38,81,80,61,68}</neighbourhood>
+  <position>{94.3422263023,84.9457066797}</position>
+  <xpos>94.3422263023</xpos>
+  <ypos>84.9457066797</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>35</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{34,24,45,36,18,96,79,101}</neighbourhood>
+  <position>{29.7131055394,80.6904533421}</position>
+  <xpos>29.7131055394</xpos>
+  <ypos>80.6904533421</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>36</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{55,75,40,66,39,35,83,12}</neighbourhood>
+  <position>{55.9640407914,24.3660458097}</position>
+  <xpos>55.9640407914</xpos>
+  <ypos>24.3660458097</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>37</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{29,43,13,60,81,29,10,77}</neighbourhood>
+  <position>{61.4582255217,48.4536534778}</position>
+  <xpos>61.4582255217</xpos>
+  <ypos>48.4536534778</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>38</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{65,14,23,31,52,25,47,54}</neighbourhood>
+  <position>{31.744035553,51.1761393446}</position>
+  <xpos>31.744035553</xpos>
+  <ypos>51.1761393446</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>39</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{62,57,9,26,36,15,11,11}</neighbourhood>
+  <position>{46.8510759685,0.0115061350148}</position>
+  <xpos>46.8510759685</xpos>
+  <ypos>0.0115061350148</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>40</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{88,76,7,79,61,38,45,25}</neighbourhood>
+  <position>{81.8098878272,78.0211326235}</position>
+  <xpos>81.8098878272</xpos>
+  <ypos>78.0211326235</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>41</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{75,51,80,79,32,60,62,22}</neighbourhood>
+  <position>{74.2042965588,86.6506053723}</position>
+  <xpos>74.2042965588</xpos>
+  <ypos>86.6506053723</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>42</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{92,7,7,93,37,86,9,25}</neighbourhood>
+  <position>{19.3314494699,94.0079271855}</position>
+  <xpos>19.3314494699</xpos>
+  <ypos>94.0079271855</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>43</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{53,78,67,57,34,28,68,29}</neighbourhood>
+  <position>{57.0010000167,74.7163146666}</position>
+  <xpos>57.0010000167</xpos>
+  <ypos>74.7163146666</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>44</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{95,76,66,20,54,89,38,6}</neighbourhood>
+  <position>{16.9898322965,29.1479669318}</position>
+  <xpos>16.9898322965</xpos>
+  <ypos>29.1479669318</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>45</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{66,13,54,69,32,63,71,39}</neighbourhood>
+  <position>{46.8120361634,6.99921607403}</position>
+  <xpos>46.8120361634</xpos>
+  <ypos>6.99921607403</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>46</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{39,80,24,100,48,19,86,88}</neighbourhood>
+  <position>{36.9602926221,84.9424178013}</position>
+  <xpos>36.9602926221</xpos>
+  <ypos>84.9424178013</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>47</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{52,93,41,95,99,100,70,60}</neighbourhood>
+  <position>{80.9883757531,40.6894402311}</position>
+  <xpos>80.9883757531</xpos>
+  <ypos>40.6894402311</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>48</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{52,33,68,40,80,39,75,66}</neighbourhood>
+  <position>{45.3974659721,12.7999752556}</position>
+  <xpos>45.3974659721</xpos>
+  <ypos>12.7999752556</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>49</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{71,100,73,7,86,51,64,81}</neighbourhood>
+  <position>{33.8251420021,19.4799241698}</position>
+  <xpos>33.8251420021</xpos>
+  <ypos>19.4799241698</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>50</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{72,10,6,74,52,17,42,74}</neighbourhood>
+  <position>{36.7119134158,88.4691913901}</position>
+  <xpos>36.7119134158</xpos>
+  <ypos>88.4691913901</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>51</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{51,13,43,18,36,8,69,26}</neighbourhood>
+  <position>{23.910555105,81.30752346}</position>
+  <xpos>23.910555105</xpos>
+  <ypos>81.30752346</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>52</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{30,54,20,53,61,48,40,57}</neighbourhood>
+  <position>{37.3385080795,51.0927678606}</position>
+  <xpos>37.3385080795</xpos>
+  <ypos>51.0927678606</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>53</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{10,18,84,45,88,26,19,76}</neighbourhood>
+  <position>{88.7667557402,85.5155526223}</position>
+  <xpos>88.7667557402</xpos>
+  <ypos>85.5155526223</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>54</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{8,61,56,21,10,23,14,81}</neighbourhood>
+  <position>{99.8851053509,72.1238897787}</position>
+  <xpos>99.8851053509</xpos>
+  <ypos>72.1238897787</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>55</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{24,76,12,14,18,69,18,22}</neighbourhood>
+  <position>{23.7311848801,85.0606993814}</position>
+  <xpos>23.7311848801</xpos>
+  <ypos>85.0606993814</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>56</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{56,6,47,2,20,91,90,83}</neighbourhood>
+  <position>{47.2977543512,34.0547126135}</position>
+  <xpos>47.2977543512</xpos>
+  <ypos>34.0547126135</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>57</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{48,59,7,71,64,19,48,72}</neighbourhood>
+  <position>{33.8695568552,32.2011122635}</position>
+  <xpos>33.8695568552</xpos>
+  <ypos>32.2011122635</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>58</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{6,56,42,12,68,56,57,91}</neighbourhood>
+  <position>{61.5455939633,3.64931796439}</position>
+  <xpos>61.5455939633</xpos>
+  <ypos>3.64931796439</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>59</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{35,29,19,34,99,31,54,2}</neighbourhood>
+  <position>{30.8590431649,51.9672492206}</position>
+  <xpos>30.8590431649</xpos>
+  <ypos>51.9672492206</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>60</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{66,12,98,101,96,41,90,73}</neighbourhood>
+  <position>{26.9409815367,6.5258891672}</position>
+  <xpos>26.9409815367</xpos>
+  <ypos>6.5258891672</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>61</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{88,54,64,74,91,26,94,7}</neighbourhood>
+  <position>{47.0583185423,58.296371288}</position>
+  <xpos>47.0583185423</xpos>
+  <ypos>58.296371288</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>62</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{19,101,36,3,65,16,77,3}</neighbourhood>
+  <position>{48.9745819976,0.234086784065}</position>
+  <xpos>48.9745819976</xpos>
+  <ypos>0.234086784065</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>63</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{10,67,83,23,81,40,97,90}</neighbourhood>
+  <position>{15.0350170117,83.2077913607}</position>
+  <xpos>15.0350170117</xpos>
+  <ypos>83.2077913607</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>64</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{60,14,9,68,19,53,78,66}</neighbourhood>
+  <position>{48.4871268397,48.2101347778}</position>
+  <xpos>48.4871268397</xpos>
+  <ypos>48.2101347778</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>65</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{93,74,91,94,34,29,8,36}</neighbourhood>
+  <position>{9.23101370866,64.6029752864}</position>
+  <xpos>9.23101370866</xpos>
+  <ypos>64.6029752864</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>66</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{29,3,73,85,68,68,73,60}</neighbourhood>
+  <position>{86.509466349,74.7225322234}</position>
+  <xpos>86.509466349</xpos>
+  <ypos>74.7225322234</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>67</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{83,15,95,78,28,100,41,26}</neighbourhood>
+  <position>{17.3892592877,90.4643355143}</position>
+  <xpos>17.3892592877</xpos>
+  <ypos>90.4643355143</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>68</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{33,24,42,66,66,51,35,65}</neighbourhood>
+  <position>{77.0607232121,5.1094420161}</position>
+  <xpos>77.0607232121</xpos>
+  <ypos>5.1094420161</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>69</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{62,96,77,84,75,28,91,33}</neighbourhood>
+  <position>{2.34072557607,52.1997850773}</position>
+  <xpos>2.34072557607</xpos>
+  <ypos>52.1997850773</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>70</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{98,96,81,50,36,11,76,45}</neighbourhood>
+  <position>{67.9407537551,88.8800810936}</position>
+  <xpos>67.9407537551</xpos>
+  <ypos>88.8800810936</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>71</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{100,99,78,46,59,56,60,51}</neighbourhood>
+  <position>{71.6565827398,97.8653650739}</position>
+  <xpos>71.6565827398</xpos>
+  <ypos>97.8653650739</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>72</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{68,22,99,47,60,32,30,54}</neighbourhood>
+  <position>{38.2578453412,25.5109633765}</position>
+  <xpos>38.2578453412</xpos>
+  <ypos>25.5109633765</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>73</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{23,98,79,36,46,85,35,8}</neighbourhood>
+  <position>{56.6567083802,26.5501902792}</position>
+  <xpos>56.6567083802</xpos>
+  <ypos>26.5501902792</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>74</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{26,28,4,10,42,77,28,26}</neighbourhood>
+  <position>{43.0042590541,78.8674224683}</position>
+  <xpos>43.0042590541</xpos>
+  <ypos>78.8674224683</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>75</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{2,51,66,96,56,2,68,90}</neighbourhood>
+  <position>{42.1828770044,66.6958879271}</position>
+  <xpos>42.1828770044</xpos>
+  <ypos>66.6958879271</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>76</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{41,15,33,11,36,85,90,85}</neighbourhood>
+  <position>{8.62753651441,37.4433936592}</position>
+  <xpos>8.62753651441</xpos>
+  <ypos>37.4433936592</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>77</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{24,71,95,3,13,65,94,70}</neighbourhood>
+  <position>{56.7260831817,76.1546050811}</position>
+  <xpos>56.7260831817</xpos>
+  <ypos>76.1546050811</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>78</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{98,80,69,49,101,41,9,25}</neighbourhood>
+  <position>{85.4729126273,93.7994126568}</position>
+  <xpos>85.4729126273</xpos>
+  <ypos>93.7994126568</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>79</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{18,41,39,40,35,69,72,95}</neighbourhood>
+  <position>{76.925352799,35.3950488488}</position>
+  <xpos>76.925352799</xpos>
+  <ypos>35.3950488488</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>80</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{14,13,58,38,47,39,56,87}</neighbourhood>
+  <position>{73.7377378522,43.2702882053}</position>
+  <xpos>73.7377378522</xpos>
+  <ypos>43.2702882053</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>81</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{21,33,86,35,25,13,28,22}</neighbourhood>
+  <position>{14.0708301104,90.9562962204}</position>
+  <xpos>14.0708301104</xpos>
+  <ypos>90.9562962204</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>82</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{75,23,68,13,83,61,35,100}</neighbourhood>
+  <position>{50.4400825463,22.1936507581}</position>
+  <xpos>50.4400825463</xpos>
+  <ypos>22.1936507581</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>83</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{69,54,12,72,97,13,68,84}</neighbourhood>
+  <position>{57.8764688352,90.7728377859}</position>
+  <xpos>57.8764688352</xpos>
+  <ypos>90.7728377859</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>84</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{3,65,29,44,82,39,82,55}</neighbourhood>
+  <position>{90.6742350949,49.1290635129}</position>
+  <xpos>90.6742350949</xpos>
+  <ypos>49.1290635129</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>85</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{67,91,58,10,98,13,80,15}</neighbourhood>
+  <position>{81.2724332504,0.328783461157}</position>
+  <xpos>81.2724332504</xpos>
+  <ypos>0.328783461157</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>86</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{89,9,2,19,55,12,20,69}</neighbourhood>
+  <position>{31.3450845044,58.8551444192}</position>
+  <xpos>31.3450845044</xpos>
+  <ypos>58.8551444192</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>87</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{5,49,100,31,21,20,43,36}</neighbourhood>
+  <position>{82.5020312736,19.3680707467}</position>
+  <xpos>82.5020312736</xpos>
+  <ypos>19.3680707467</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>88</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{79,63,41,79,92,30,46,86}</neighbourhood>
+  <position>{36.1923269543,75.0149566825}</position>
+  <xpos>36.1923269543</xpos>
+  <ypos>75.0149566825</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>89</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{68,101,52,11,87,36,85,22}</neighbourhood>
+  <position>{94.2505694271,78.9714242288}</position>
+  <xpos>94.2505694271</xpos>
+  <ypos>78.9714242288</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>90</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{58,6,18,39,44,44,72,6}</neighbourhood>
+  <position>{12.7538549704,43.6543321208}</position>
+  <xpos>12.7538549704</xpos>
+  <ypos>43.6543321208</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>91</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{33,28,49,96,23,89,34,12}</neighbourhood>
+  <position>{3.10361352495,50.7954557495}</position>
+  <xpos>3.10361352495</xpos>
+  <ypos>50.7954557495</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>92</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{79,79,57,45,68,76,45,83}</neighbourhood>
+  <position>{13.1985225753,98.0564012119}</position>
+  <xpos>13.1985225753</xpos>
+  <ypos>98.0564012119</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>93</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{44,18,52,66,58,6,77,36}</neighbourhood>
+  <position>{14.4130734284,49.632858713}</position>
+  <xpos>14.4130734284</xpos>
+  <ypos>49.632858713</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>94</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{97,18,71,45,98,29,65,82}</neighbourhood>
+  <position>{24.6005223073,4.74358272627}</position>
+  <xpos>24.6005223073</xpos>
+  <ypos>4.74358272627</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>95</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{56,53,82,65,67,43,60,48}</neighbourhood>
+  <position>{82.9330653949,60.3636234756}</position>
+  <xpos>82.9330653949</xpos>
+  <ypos>60.3636234756</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>96</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{48,98,72,98,64,5,28,62}</neighbourhood>
+  <position>{12.4129026855,63.4725110691}</position>
+  <xpos>12.4129026855</xpos>
+  <ypos>63.4725110691</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>97</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{91,63,21,73,22,59,66,6}</neighbourhood>
+  <position>{89.0134257999,69.6646795209}</position>
+  <xpos>89.0134257999</xpos>
+  <ypos>69.6646795209</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>98</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>0</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{27,62,49,22,65,48,3,57}</neighbourhood>
+  <position>{54.8030139363,26.4837391624}</position>
+  <xpos>54.8030139363</xpos>
+  <ypos>26.4837391624</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>99</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{11,21,68,54,85,69,62,2}</neighbourhood>
+  <position>{64.8472688792,0.677765671605}</position>
+  <xpos>64.8472688792</xpos>
+  <ypos>0.677765671605</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>100</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>2</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{90,95,62,27,14,45,87,22}</neighbourhood>
+  <position>{62.9665048104,6.03558251986}</position>
+  <xpos>62.9665048104</xpos>
+  <ypos>6.03558251986</ypos>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>101</id>
+  <interactive>0</interactive>
+  <p_si>0.8</p_si>
+  <p_ir>0.8</p_ir>
+  <p_rc>0.8</p_rc>
+  <p_rs>0.8</p_rs>
+  <status>1</status>
+  <count_sum>0</count_sum>
+  <count>{0,0,0,0}</count>
+  <neighbourhood>{58,39,30,71,32,53,25,6}</neighbourhood>
+  <position>{40.8619299957,78.6572478291}</position>
+  <xpos>40.8619299957</xpos>
+  <ypos>78.6572478291</ypos>
+</xagent>
+</states>

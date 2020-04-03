@@ -1,0 +1,64 @@
+<states>
+<itno>0</itno>
+<environment>
+<rnd_seed>0</rnd_seed>
+<gsl_rng_seed>0.0</gsl_rng_seed>
+<visual_log>0</visual_log>
+<print_info>1</print_info>
+<const_multiplier>0.8</const_multiplier>
+<p_si>0.1</p_si>
+<p_ir>0.1</p_ir>
+<p_rc>0.1</p_rc>
+<p_rs>0.1</p_rs>
+</environment>
+<xagent>
+<name>Human</name>
+  <id>1</id>
+  <status>2</status>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>2</id>
+  <status>1</status>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>3</id>
+  <status>0</status>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>4</id>
+  <status>0</status>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>5</id>
+  <status>0</status>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>6</id>
+  <status>3</status>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>7</id>
+  <status>2</status>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>8</id>
+  <status>0</status>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>9</id>
+  <status>0</status>
+</xagent>
+<xagent>
+<name>Human</name>
+  <id>10</id>
+  <status>1</status>
+</xagent>
+</states>
